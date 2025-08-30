@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced Insurance Claim DApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Advanced Insurance Claim DApp</h1>
+
+    <div>
+        <h2>User Registration</h2>
+        <button onclick="registerUser()">Register</button>
+    </div>
+
+    <div>
+        <h2>Submit Claim</h2>
+        <input id="description" placeholder="Description">
+        <input id="amount" type="number" placeholder="Amount in tokens">
+        <button onclick="submitClaim()">Submit Claim</button>
+    </div>
+
+    <div>
+        <h2>View Claim</h2>
+        <input id="claimId" placeholder="Claim ID">
+        <button onclick="getClaim()">View Claim</button>
+        <p id="claimResult"></p>
+    </div>
+
+    <div>
+        <h2>Admin Panel</h2>
+        <input id="adminClaimId" placeholder="Claim ID">
+        <button onclick="approveClaim()">Approve</button>
+        <button onclick="rejectClaim()">Reject</button>
+        <button onclick="payClaim()">Pay Claim</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
